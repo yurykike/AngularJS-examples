@@ -14,7 +14,7 @@
     <p>{{message}}</p>
     <input ng-model="name" placeholder="Name">
     <input ng-model="age" placeholder="Age">
-    <button ng-show="isFilled()" ng-click="addPerson()">Add</button>
+    <button ng-disabled="!isFilled()" ng-click="addPerson()">Add</button>
     <ul>
         <li ng-repeat="person in people">{{person.name}} : {{person.age}}</li>
         
