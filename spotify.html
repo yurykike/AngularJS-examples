@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="spotifyApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>spotify example</title>
+    <link href="" rel="stylesheet" type="text/css">
+
+</head>
+
+<body ng-controller="MySpotifyController">
+<h1>spotify example</h1>
+
+<p>{{message}}</p>
+
+<input ng-model= "artist" placeholder="Artist">
+<button ng-click= "search()">Search</button>
+
+<ul>
+    <li ng-repeat="a in artists">{{a.name}}</li>
+</ul>
+
+
+<script src="angular.min.js"></script>
+<script src="spotify.js"></script>
+</body>
+
+</html>
