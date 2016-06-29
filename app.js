@@ -3,7 +3,11 @@
 console.log("hola!");
 var myApp = angular.module('myApp', []);
 
+<<<<<<< HEAD
 myApp.controller('MyController', function ($scope) {
+=======
+myApp.controller('MyController', function($scope, $http) {
+>>>>>>> angular-services
     $scope.message = "Hello, its me";
     $scope.people = [
         {
