@@ -20,7 +20,13 @@ myApp.controller('MyController', function ($scope) {
         }
     ];
     
-    
+    $scope.buttonClass = function(){
+        if($scope.isFilled()){
+            return "enabled";
+        }else {
+            return "disabled";
+        }
+    };
     
     $scope.isFilled = function() {
        
