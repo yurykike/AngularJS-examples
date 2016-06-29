@@ -20,6 +20,14 @@ myApp.controller('MyController', function ($scope) {
         }
     ];
     
+    
+    
+    $scope.isFilled = function() {
+       
+        return $scope.name && $scope.age;
+        
+    };
+    
     $scope.addPerson = function() {
         console.log("boton pulsado!");
         
@@ -29,4 +37,5 @@ myApp.controller('MyController', function ($scope) {
         };
         $scope.people.push(person);
     };
+    
 });

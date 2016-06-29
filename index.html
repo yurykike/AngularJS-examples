@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>AngularJS example</title>
-    <link href="" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -14,7 +14,7 @@
     <p>{{message}}</p>
     <input ng-model="name" placeholder="Name">
     <input ng-model="age" placeholder="Age">
-    <button ng-click="addPerson()">Add</button>
+    <button ng-show="isFilled()" ng-click="addPerson()">Add</button>
     <ul>
         <li ng-repeat="person in people">{{person.name}} : {{person.age}}</li>
         
